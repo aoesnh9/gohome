@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>집에 가고 싶은 날...</title>
+    
+    <style>
+        body {
+            background-color: #f5d0ee;
+            color: #909dd4;
+            text-align: center;
+            padding-top: 100px;
+            font-family: sans-serif;
+            }
+        
+        button {
+            margin-top: 10px;
+        }
+        
+        .rainbow-btn {
+      padding: 10px 15px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      animation: rainbow-text 4s infinite;
+    }
+
+    @keyframes rainbow-text {
+      0%   { color: #e07f7f; }
+      6%  { color: #d79f73; }
+      33%  { color: #e0d97f; }
+      50%  { color: #8bd773; }
+      66%  { color: #73d7d6; }
+      83%  { color: #7378d7; }
+      100% { color: #8e73d7; }
+    }
+    </style>
+</head>
+<body>
+
+    <div id="box">
+        <h1>집에 가고 싶기니?</h1>
+        <h3>그렇다면 여기를 눌러 (˵ •̀ ᴗ - ˵ ) </h3>
+        <button id="myButton" class="rainbow-btn">요기!</button>
+
+  <script>
+    // 버튼 요소를 선택합니다.
+    const btn = document.getElementById('myButton');
+
+    // 클릭했을 때 실행될 동작들을 묶어줍니다.
+    btn.addEventListener('click', function() {
+      
+      // 첫 번째 기능: 알림창 띄우기
+      alert('그럼 집에 가셈');
+      
+      
+    });
+  </script>
+    </div>
+
+</body>
+</html>
